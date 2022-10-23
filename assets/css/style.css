@@ -1,0 +1,51 @@
+:root {
+    --bg-body: #04b3c8;
+    --color-font: #fff;
+    --color-button: #323232;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-1 {
+    display: flex;
+    margin-top: 100px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    background: var(--bg-body);
+    width: 100vw;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    padding: 42px;
+}
+
+h1 {
+    margin: 0 0 50px 0px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-font);
+}
+
+p {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 20px;
+    color: var(--color-font);
+    text-transform: uppercase;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    color: var(--color-button);
+    font-weight: bold;
+}
