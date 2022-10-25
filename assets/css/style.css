@@ -4,11 +4,6 @@
     --color-button: #323232;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .section-1 {
     display: flex;
     margin-top: 100px;
@@ -16,13 +11,14 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
     display: flex;
-    background: var(--bg-body);
-    width: 100vw;
-    height: 60vh;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 42px;
+    background: var(--bg-body);
 }
 
 h1 {
@@ -47,5 +43,10 @@ button {
     margin: 20px;
     border-radius: 50%;
     color: var(--color-button);
+    font-weight: bold;
+}
+
+#currentNumber {
+    color: var(--color-font);
     font-weight: bold;
 }
