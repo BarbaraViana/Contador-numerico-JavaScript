@@ -1,13 +1,20 @@
 :root {
-    --bg-body: #04b3c8;
-    --color-font: #fff;
-    --color-button: #323232;
+    --bg-body: #005189;
+    --color-font: #fdffff;
+    --color-button: #1f98da;
+    --colorBtnHover: #24a4de;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .section-1 {
     display: flex;
     margin-top: 100px;
     text-align: center;
+    box-shadow: 10px 10px 20px var(--colorBShadow);
+    background-color: var(--bg-body);
 }
 
 body {
@@ -27,13 +34,17 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: var(--color-font);
+    font-size: Arial;
 }
 
 p {
     text-align: center;
-    padding: 50px 0px;
-    font-size: 20px;
+    padding: 25px 0px;
+    font-size: 20px Arial;
     color: var(--color-font);
+}
+
+.number {
     text-transform: uppercase;
 }
 
@@ -41,8 +52,19 @@ button {
     height: 80px;
     width: 80px;
     margin: 20px;
+    font-size: 20px;
     border-radius: 50%;
-    color: var(--color-button);
+    background-color: var(--colorBtnHover);
+    color: var(--color-font);
+    font-weight: bold;
+}
+
+button:hover {
+    height: 90px;
+    width: 90px;
+    margin: 20px;
+    border-radius: 50%;
+    color: var(--color-font);
     font-weight: bold;
 }
 
